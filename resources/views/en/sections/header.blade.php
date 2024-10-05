@@ -1,21 +1,30 @@
-<header class="absolute top-7 left-0 w-full z-10">
-    <div class="container mx-auto mt-5 flex justify-center ">
-        <div class="w-[10%]">
-            <img src="{{asset('images/zain.png')}}" alt="Logo" class="w-full h-auto">
+<style>
+header{
+    background-image: url('{{ asset('images/headerbg.png') }}');
+    background-size: contain;
+  
+    background-position:absolute;
+    top:0;
+}
+
+</style>
+<header class="absolute top-0 left-0 h-[7rem] w-full z-10 flex items-end">
+   <div class="container m-auto flex flex-row justify-between ">
+    
+        <div class=""><img src="{{asset('images/headerLogo.png')}}" alt="main background"></div>
+        <div class=" text-white w-[25%] flex items-center">
+         <ul class="flex flex-row  w-[100%] justify-between ">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Our Work</li>
+         </ul>
+      </div>
+        <div class="flex flex-row w-[25%] justify-between">
+            <div class="flex items-center justify-center text-white"><img src="{{asset('images/world.png')}}" alt=""><span class="mx-2" style=" font-family: 'Cairo', sans-serif;">العربية</span></div>
+            <div class="flex items-center justify-center"><img src="{{asset('images/search.png')}}" alt="search icon"></div>
+            <div class="bg-[#26A7C0] hover:bg-[#29636e] w-[55%] text-white font-bold flex items-center justify-center">Contact Us</div>
         </div>
-        <nav class="w-[80%] flex justify-center ">
-        <ul class="w-[100%] text-[1.5rem] flex justify-around ">
-                <li><a href="#" class="text-white hover:text-red-300 transition duration-300 font-bold">Home</a></li>
-                <li><a href="#" class="text-white hover:text-gray-300 transition duration-300 font-bold">About Us</a></li>
-                <li><a href="#" class="text-white hover:text-gray-300 transition duration-300 font-bold">Our Vision</a></li>
-                <li><a href="#" class="text-white hover:text-gray-300 transition duration-300 font-bold">Our Mission</a></li>
-                <li><a href="#" class="text-white hover:text-gray-300 transition duration-300 font-bold">Our Services</a></li>
-                <li><a href="#" class="text-white hover:text-gray-300 transition duration-300 font-bold">Portfolio</a></li>
-                <li><a href="#" class="text-white hover:text-gray-300 transition duration-300 font-bold">Certifications</a></li>
-            </ul>
-        </nav>
-        <div class="w-[10%] flex items-end text-white ">
-            <p class="border-2  border-[#b4c6ca] bg-[#034B59] rounded-lg p-1 text-center">Have A Question?</p>
-        </div>
-    </div>
+   
+   </div>
 </header>

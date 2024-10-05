@@ -1,43 +1,33 @@
 <style>
-    @keyframes float {
-        0%, 100% { transform: translateY(10px); }
-        50% { transform: translateY(-40px); }
-    }
-    .float-animation {
-        animation: float 3s ease-in-out infinite;
-    }
+#hero {
+    background-image: url('{{ asset('images/mainhero_bg.png') }}');
+    background-size: cover;
+    background-position: center;
+}
+
 </style>
 
-<div class="relative h-screen w-full">
-    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('{{asset('images/herobg.png')}}');">
-    </div>
-    <div class="relative z-10 flex items-center justify-center h-full ">
-        <div class="absolute bottom-0 flex items-center justify-center font-bold leading-[1.2] h-[80%] ">
-            <div class="w-[10%]  flex flex-col items-end justify-center h-[12rem] ">
-                <div class="border rounded-r-xl h-[80%]flex justify-between bg-[#D9D9D9]">
-                    <img class="border rounded-full m-2 p-2 bg-[#005561]" src="{{ asset('images/call.png') }}" alt="phone-icon">
-                    <img class="border rounded-full m-2 p-2 bg-[#005561]" src="{{ asset('images/mail.png') }}" alt="mail-icon">
-                    <img class="border rounded-full m-2 p-2 bg-[#005561]" src="{{ asset('images/location.png') }}" alt="location-icon">
-                    <img class="border rounded-full m-2 p-2 bg-[#005561]" src="{{ asset('images/call.png') }}" alt="">
-                </div>
-            </div>
-            <div class="w-[35%] flex flex-col items-start ml-10 mb-10 " style="font-family:'Open Sans'">
-                <h1 class="text-white text-[6rem] ">Home of</h1>
-                <h1 class="text-black text-[6rem]">Innovation</h1>
-                <h2 class="text-white text-[4rem]">Start Your Dream At</h2>
-                <h1 class="text-[#3EF1FF] text-[8rem]">Zain Zwy</h1>
-                <p class="text-white text-2xl mt-3">We are leading specializing in providing integrated and innovative technology solutions.
-                Our vision is built on innovation, creativity,
-                and dedication to providing the best technological solutions that meet market demands.</p>
-            </div>
-            <div id="hero-image" class="w-[40%] mb-[-5rem] ">
-                <div class="relative flex justify-center">
-                    <img class="border-[0.5rem] border-[#3EF1FF] rounded-full p-5" src="{{asset('images/heroimg.png')}}" alt="hero image">
-                    <div class="absolute left-0 bottom-0 float-animation">
-                        <img src="{{asset('images/ball.png')}}" alt="ball">
-                    </div>
-                </div>
+<section id="hero">
+    <div class="container mx-auto  h-auto flex flex-col justify-center">
+        <div class="flex flex-row justify-between mt-[15rem]">
+            <div class=" text-white font-extrabold w-[51%]" >
+                <div class="2xl:text-[3.25rem] lg:text-[2rem] text-[1rem]">INNOVATIVE <span class="text-[#26A7C0]">TECHNOLOGICAL</span></div>
+                <div class="2xl:text-[3.25rem] lg:text-[2rem] text-[1rem] text-center">SOLUTION FOR THE FUTURE</div>
+                <div class="2x:text-[1rem] lg:text-[0.7rem] text-[0.4rem] font-normal text-wrap text-[#C4DEDE]"><p>We provide advanced technologies and customized services to enable your business to grow and develop in a rapidly changing digital world.</p></div>
+             </div>
+            <div class=" flex flex-col justify-around items-end w-10">
+                <div ><img class="w-6" src="{{asset('images/x.png')}}" alt="x icon"></div>
+                <div><img class="w-6" src="{{asset('images/facebook.png')}}" alt="facebook icon"></div>
+                <div><img class="w-6" src="{{asset('images/instagram.png')}}" alt="instagram icon"></div>
+                <div><img class="w-6" src="{{asset('images/snapchat.png')}}" alt="snapchat icon"></div>
             </div>
         </div>
+        <div class="flex justify-center items-center ">
+             <img src="{{asset('images/heroImg3.png')}}" class="w-[60%] h-auto " alt="">
+        </div>
+        
     </div>
-</div>
+        <div class="w-[100vw] mx-0 mt-[5rem]">
+            <img class="w-[100%] px-10 h-[15rem]" src="{{asset('images/zaingroupe.png')}}" alt="">
+        </div>
+</section>
