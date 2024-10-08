@@ -57,7 +57,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="">copy rights</div>
+                <div class="border-t-2 border-[#8EC5D0] w-[100%] text-right mt-8 pt-8 pb-4 text-[#C4DEDE]">All copy rights reserved to <span class="text-[#26A7C0]">ZAIN ZWY</span> -2024</div>
             </div>
         </div>
     </div>
