@@ -16,9 +16,9 @@
                 <div class="2x:text-[1rem] lg:text-[0.7rem] text-[0.4rem] font-normal text-wrap text-[#C4DEDE]"><p>We provide advanced technologies and customized services to enable your business to grow and develop in a rapidly changing digital world.</p></div>
              </div>
             <div class=" flex flex-col justify-around items-end w-10">
-                <div ><img class="w-6" src="{{asset('images/x.png')}}" alt="x icon"></div>
+                <div ><a href="https://x.com/zainzwy?s=11"><img class="w-6" src="{{asset('images/x.png')}}" alt="x icon"></a></div>
                 <div><img class="w-6" src="{{asset('images/facebook.png')}}" alt="facebook icon"></div>
-                <div><img class="w-6" src="{{asset('images/instagram.png')}}" alt="instagram icon"></div>
+                <div><a href="https://www.instagram.com/zainzwy/profilecard/?igsh=MWdsdDF4Z2kxNmI1dw=="><img class="w-6" src="{{asset('images/instagram.png')}}" alt="instagram icon"></a></div>
                 <div><img class="w-6" src="{{asset('images/snapchat.png')}}" alt="snapchat icon"></div>
             </div>
         </div>

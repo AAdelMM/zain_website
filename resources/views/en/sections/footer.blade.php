@@ -50,9 +50,9 @@
                     </div>
                     <div class="social flex justify-center items-center">
                     <div class=" flex flex-col justify-around items-end w-10 h-[80%]">
-                        <div ><img class="w-6" src="{{asset('images/x.png')}}" alt="x icon"></div>
+                        <div><a href="https://x.com/zainzwy?s=11"><img class="w-6" src="{{asset('images/x.png')}}" alt="x icon"></a></div>
                         <div><img class="w-6" src="{{asset('images/facebook.png')}}" alt="facebook icon"></div>
-                        <div><img class="w-6" src="{{asset('images/instagram.png')}}" alt="instagram icon"></div>
+                        <div><a href="https://www.instagram.com/zainzwy/profilecard/?igsh=MWdsdDF4Z2kxNmI1dw=="><img class="w-6" src="{{asset('images/instagram.png')}}" alt="instagram icon"></a></div>
                         <div><img class="w-6" src="{{asset('images/snapchat.png')}}" alt="snapchat icon"></div>
                     </div>
                     </div>
