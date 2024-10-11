@@ -16,11 +16,11 @@
                 <div class="2x:text-[1rem] lg:text-[0.7rem] text-[0.4rem] font-normal text-wrap text-[#C4DEDE]"><p>We provide advanced technologies and customized services to enable your business to grow and develop in a rapidly changing digital world.</p></div>
              </div>
             <div class=" flex flex-col justify-around items-end w-10">
-                <div ><a href="https://x.com/zainzwy?s=11"><img class="w-6" src="{{asset('images/x.png')}}" alt="x icon"></a></div>
-                <div><img class="w-6" src="{{asset('images/facebook.png')}}" alt="facebook icon"></div>
-                <div><a href="https://www.instagram.com/zainzwy/profilecard/?igsh=MWdsdDF4Z2kxNmI1dw=="><img class="w-6" src="{{asset('images/instagram.png')}}" alt="instagram icon"></a></div>
-                <div><img class="w-6" src="{{asset('images/snapchat.png')}}" alt="snapchat icon"></div>
-            </div>
+                <div ><a href="https://x.com/zainzwy?s=11"><img class="w-6 opacity-80" src="{{asset('images/x1.png')}}" alt="x icon"></a></div>
+                <div><a href="https://www.tiktok.com/@zainzwy?_t=8qKzVK801up&_r=1"><img class="w-6 opacity-80" src="{{asset('images/tiktok.png')}}" alt="tiktok icon"></a></div>
+                <div><a href="https://www.instagram.com/zainzwy/profilecard/?igsh=MWdsdDF4Z2kxNmI1dw=="><img class="w-6 opacity-80" src="{{asset('images/insta.png')}}" alt="instagram icon"></a></div>
+                <div><a href="https://wa.me/966508950527"><img class="w-6 opacity-80" src="{{asset('images/whats1.png')}}" alt="snapchat icon"></a></div>
+                </div>
         </div>
         <div class="flex justify-center items-center ">
              <img src="{{asset('images/heroImg3.png')}}" class="w-[60%] h-auto " alt="">

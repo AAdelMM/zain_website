@@ -23,7 +23,7 @@
             <div><img src="{{asset('images/aboutImg.png')}}" alt=""></div>
         </div>
         <div class="flex flex-col mt-7 mx-10">
-            <div class="flex justify-start">
+            <div class="flex justify-start mb-5">
                 <div class="flex justify-between w-[80%]">
                     <div class="card shadow-md pr-2 py-5  w-[25%] flex items-center">
                         <div class="cardL w-[10%] h-[80%] border-t-4 border-black border-b-4 border-l-0 border-r-4 flex justify-center items-center font-bold"><p class="text-center w-[450%] flex justify-between">Goal<span class="ml-1 text-[#26A7C0]"> 01</span></p></div>

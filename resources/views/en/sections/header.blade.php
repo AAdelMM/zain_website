@@ -14,8 +14,8 @@ header{
         <div class=""><img src="{{asset('images/headerLogo.png')}}" alt="main background"></div>
         <div class=" text-white w-[25%] flex items-center">
          <ul class="flex flex-row  w-[100%] justify-between ">
-            <li>Home</li>
-            <li>About Us</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
             <li>Services</li>
             <li>Our Work</li>
          </ul>
