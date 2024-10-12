@@ -34,11 +34,11 @@
                 <div class=" w-[100%] flex justify-between">
                     <div class="contactus text-white font-bold">
                         <div class="mb-5 text-[1.5rem] font-extrabold">Contact Us</div>
-                        <div class="pt-2 flex gap-3"><img class="h-5 w-[10%]" src="{{asset('images/call.png')}}" alt=""> +966-508950527</div>
-                        <div class="pt-2 flex gap-3"><img class="h-5 w-[10%]" src="{{asset('images/whatsapp.png')}}" alt=""> +966-508950527</div>
-                        <div class="pt-2 flex gap-3"><img class="h-5 w-[10%]" src="{{asset('images/email.png')}}" alt=""> info@zainzoe.com </div>
-                        <div class="pt-2 flex gap-3"><img class="h-[60%] w-[10%]" src="{{asset('images/pin.png')}}" alt="">Saudi Arabia
-                        Riyadh<br> Prince Faisal Street</div>
+                        <a href="tel:00966508950527"> <div class="pt-2 flex gap-3"><img class="h-5 w-[10%]" src="{{asset('images/call.png')}}" alt=""> +966-508950527</div></a>
+                        <a href="https://wa.me/966508950527"><div class="pt-2 flex gap-3"><img class="h-5 w-[10%]" src="{{asset('images/whatsapp.png')}}" alt=""> +966-508950527</div></a>
+                        <a href="mailto:info@zainzoe.com"><div class="pt-2 flex gap-3"><img class="h-5 w-[10%]" src="{{asset('images/email.png')}}" alt=""> info@zainzoe.com </div></a>
+                        <a href="https://maps.app.goo.gl/GyZYX7QoHNMzL7bT6"><div class="pt-2 flex gap-3"><img class="h-[60%] w-[10%]" src="{{asset('images/pin.png')}}" alt="">Saudi Arabia
+                        Riyadh<br> Prince Faisal Street</div></a>
                     </div>
                     <div class="main-menu flex flex-col text-white font-bold">
                         <div class="mb-5 text-[1.5rem] font-extrabold">ZAIN ZWY</div>

@@ -16,7 +16,7 @@ header{
          <ul class="flex flex-row  w-[100%] justify-between ">
             <li><a href="/">Home</a></li>
             <li><a href="/about">About Us</a></li>
-            <li>Services</li>
+            <li><a href="/services">Services</a></li>
             <li>Our Work</li>
          </ul>
       </div>
