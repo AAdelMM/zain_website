@@ -165,7 +165,7 @@
 </footer>
 
 <footer class="mobile-footer flex flex-col" style="display: none;">
-    <div class="upper-div h-[25rem] relative flex  ">
+    <div class="upper-div h-[33rem] relative flex  ">
         <img class="absolute h-full bottom-0 object-cover w-full z-[-2]" src="{{asset('images/mobile-footerbg1.png')}}" alt="triangle image">
         <img class="absolute h-[80%] bottom-0 object-cover w-full z-[-1]" src="{{asset('images/mobile-footerbg2.png')}}" alt="second footer image">
         <div class="flex justify-between items-center p-4 ">
@@ -239,7 +239,7 @@
 
 <script>
     function toggleFooter() {
-        const isMobile = window.innerWidth <= 600;
+        const isMobile = window.innerWidth <= 800;
         const desktopFooter = document.querySelector('.desktop-footer');
         const mobileFooter = document.querySelector('.mobile-footer');
 

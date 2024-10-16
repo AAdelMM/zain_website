@@ -1,5 +1,34 @@
+<style>
+    /* Responsive Styles */
+    @media (max-width: 800px) {
+     .contactus-image{
+        width: 60%;
+     }
+     .contact-card{
+        width: 80%;
+        
+     }
+
+     #contactus{
+        margin-bottom:5rem;
+        
+     }
+.contactImage{
+    gap:3rem;
+}
+    }
+    @media (max-width: 800px) {
+        section .formandimg{
+            flex-direction:column-reverse;
+        }
+        .contact-card{
+            width: 100%;
+        }
+    }
+</style>
+
 <section id="contactus" class="mt-[10rem] bg-white">
-    <div class="container mx-auto flex justify-center ">
+    <div class="container formandimg mx-auto flex justify-center ">
         <div class="contact-card  w-[50%] ">
             <div class="container mx-auto w-[80%] p-8  shadow-xl">
                 <div class="text-[#034A58] font-bold text-[1.25rem]">Fill The Form Below....</div>
@@ -31,9 +60,9 @@
                 <p>Contact Us</p>
                 <img class="h-2" src="{{asset('images/arrowL.png')}}" alt="arrow">
             </div>
-            <div class="text-[#034A58] font-bold text-[2.625rem] text-center">We Are Here To<br>
+            <div class="text-[#034A58] font-bold lg:text-[2.625rem] text-[1.5rem] text-center">We Are Here To<br>
             Answer All Your Inquiries</div>
-            <div><img src="{{asset('images/contactusbg.png')}}" alt="contact us image"></div>
+            <div class="contactus-image"><img src="{{asset('images/contactusbg.png')}}" alt="contact us image"></div>
         </div>
     </div>
 </section>
