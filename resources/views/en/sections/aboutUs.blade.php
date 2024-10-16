@@ -2,6 +2,80 @@
     .cardL p {
         transform: rotate(-90deg);
     }
+
+    /* Responsive Styles */
+    @media (max-width: 1024px) {
+        #aboutUs .flex-col {
+            flex-direction: column;
+        }
+        #aboutUs .w-full {
+            width: 100%;
+        }
+        #aboutUs .lg\\:w-\\[50%\\] {
+            width: 100%;
+        }
+        #aboutUs .lg\\:w-\\[45%\\] {
+            width: 100%;
+        }
+        #aboutUs .lg\\:flex-row {
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .text-[1.8rem], .text-[1.7rem], .text-[2.6rem] {
+            font-size: 1.5rem;
+        }
+        .text-[0.9rem] {
+            font-size: 0.8rem;
+        }
+        .cardR .text-[1rem], .cardR .text-[1.25rem] {
+            font-size: 0.9rem;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .mt-10 {
+            margin-top: 2rem;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .text-[2.6rem] {
+            font-size: 1.8rem;
+        }
+        .text-[1.8rem], .text-[1.7rem] {
+            font-size: 1.4rem;
+        }
+        .text-[0.9rem] {
+            font-size: 0.7rem;
+        }
+        .card {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        .cardL {
+            width: 25%;
+            height: auto;
+            border-width: 2px;
+        }
+        .cardL p {
+            font-size: 0.8rem;
+        }
+        .cardR {
+            margin-left: 1rem;
+        }
+        .w-40 {
+            width: 100%;
+        }
+    }
+
+    /* Ensure the background images cover the section properly */
+    #aboutUs img.absolute {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 </style>
 
 <section id="aboutUs" class="relative py-10">
@@ -12,7 +86,7 @@
         <div class="text-[#26A7C0] flex items-center gap-2 text-[0.9rem]">
             About Us <img class="w-6 h-2" src="{{asset('images/arrowL.png')}}" alt="">
         </div>
-        
+
         <div class="flex flex-col lg:flex-row justify-between gap-10 mt-5">
             <!-- Text Content -->
             <div class="flex flex-col font-extrabold w-full lg:w-[50%] my-5">

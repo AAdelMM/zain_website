@@ -1,50 +1,72 @@
 <style>
-        .carousel-container {
-            overflow: hidden;
-            position: relative;
-        }
+    .carousel-container {
+        overflow: hidden;
+        position: relative;
+    }
 
-        .cards {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
+    .cards {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
 
+    .card {
+        flex: 0 0 calc(33.333% - 20px);
+        margin: 0 10px;
+        transition: background-color 1s, color 1s;
+        min-width: calc(33.333% - 20px);
+    }
+
+    .card:hover {
+        background-color: #034A58;
+        color: white;
+    }
+
+    .card:hover .text-[#034A58] {
+        color: white;
+    }
+
+    .cardLogo img {
+        transition: opacity 0.3s;
+    }
+
+    .card:hover .cardLogo img {
+        opacity: 0;
+    }
+
+    .card:hover * {
+        color: white;
+    }
+
+    .card:hover .cardLogo::after {
+        content: url('{{asset('images/logohover.png')}}');
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1024px) {
         .card {
-            flex: 0 0 calc(33.333% - 20px);
-            margin: 0 10px;
-            transition: background-color 1s, color 1s;
+            flex: 0 0 calc(50% - 20px);
+            min-width: calc(50% - 20px);
         }
+    }
 
-        .card:hover {
-            background-color: #034A58;
-            color: white;
+    @media (max-width: 768px) {
+        .card {
+            flex: 0 0 calc(100% - 20px);
+            min-width: calc(100% - 20px);
         }
+    }
 
-        .card:hover .text-[#034A58] {
-            color: white;
-        }
-
-        .cardLogo img {
-            transition: opacity 0.3s;
-        }
-
-        .card:hover .cardLogo img {
-            opacity: 0;
-        }
-
-        .card:hover * {
-            color: white;
-        }
-
-        .card:hover .cardLogo::after {
-            content: url('{{asset('images/logohover.png')}}');
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 10;
-        }
-    </style>
-
+    .carousel-navigation {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+</style>
 
 
 <section id="ourwork">
@@ -157,30 +179,47 @@
 </section>
 
 <script>
-        const carouselContainer = document.querySelector('.carousel-container');
-        const cardsContainer = document.querySelector('.cards');
-        const cards = document.querySelectorAll('.card');
-        const prevButton = document.querySelector('.prev');
-        const nextButton = document.querySelector('.next');
+    const carouselContainer = document.querySelector('.carousel-container');
+    const cardsContainer = document.querySelector('.cards');
+    const cards = document.querySelectorAll('.card');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
 
-        let currentIndex = 0;
-        const totalCards = cards.length;
-        const visibleCards = 3;
+    let currentIndex = 0;
+    const totalCards = cards.length;
+    let visibleCards = getVisibleCards();
 
-        function updateCarousel() {
-            const cardWidth = cards[0].offsetWidth + 20; // Including margin
-            const offset = -currentIndex * cardWidth;
-            cardsContainer.style.transform = `translateX(${offset}px)`;
+    function getVisibleCards() {
+        const containerWidth = carouselContainer.offsetWidth;
+        if (containerWidth <= 768) {
+            return 1; // Show 1 card on small screens
+        } else if (containerWidth <= 1024) {
+            return 2; // Show 2 cards on medium screens
+        } else {
+            return 3; // Show 3 cards on large screens
         }
+    }
 
-        function moveCarousel(direction) {
-            currentIndex = (currentIndex + direction + totalCards) % totalCards;
-            updateCarousel();
-        }
+    function updateCarousel() {
+        const cardWidth = cards[0].offsetWidth + 20; // Including margin
+        const offset = -currentIndex * cardWidth;
+        cardsContainer.style.transform = `translateX(${offset}px)`;
+    }
 
-        prevButton.addEventListener('click', () => moveCarousel(-visibleCards));
-        nextButton.addEventListener('click', () => moveCarousel(visibleCards));
-
-        // Initialize the carousel
+    function moveCarousel(direction) {
+        currentIndex = (currentIndex + direction + totalCards) % totalCards;
         updateCarousel();
-    </script>
+    }
+
+    prevButton.addEventListener('click', () => moveCarousel(-visibleCards));
+    nextButton.addEventListener('click', () => moveCarousel(visibleCards));
+
+    // Recalculate visible cards on window resize
+    window.addEventListener('resize', () => {
+        visibleCards = getVisibleCards();
+        updateCarousel();
+    });
+
+    // Initialize the carousel
+    updateCarousel();
+</script>
