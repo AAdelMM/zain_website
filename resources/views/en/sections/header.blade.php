@@ -66,7 +66,7 @@ header {
    </div>
 </header>
 <!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden md:hidden bg-[#1b1b1b] text-white w-full">
+<div id="mobile-menu" class="hidden md:hidden bg-[#29636e] text-white w-full absolute top-[5rem] opacity-90">
    <ul class="flex flex-col items-center py-4">
        <li><a href="/" class="py-2 hover:text-[#26A7C0]">Home</a></li>
        <li><a href="/about" class="py-2 hover:text-[#26A7C0]">About Us</a></li>

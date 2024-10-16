@@ -82,8 +82,8 @@
 </style>
 
 <section id="aboutUs" class="relative py-10">
-    <img class="absolute z-[-5] w-full h-auto left-0 opacity-80 object-cover" src="{{asset('images/aboutbg.png')}}" alt="about bg">
-    <img class="absolute left-0 z-[-3] w-full h-full opacity-95 object-cover" src="{{asset('images/aboutcover.png')}}" alt="cover">
+    <img class="absolute z-[-5] w-full h-auto left-0 opacity-50 object-cover" src="{{asset('images/aboutbg.png')}}" alt="about bg">
+    <img class="absolute left-0 z-[-3] w-full h-full opacity-98 object-cover" src="{{asset('images/aboutcover.png')}}" alt="cover">
 
     <div class="container mx-auto mt-20 px-4">
         <div class="text-[#26A7C0] flex items-center gap-2 text-[0.9rem]">
