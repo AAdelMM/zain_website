@@ -165,14 +165,14 @@
 </footer>
 
 <footer class="mobile-footer flex flex-col" style="display: none;">
-    <div class="upper-div h-[25rem] relative flex flex-col border-2 border-red-500">
+    <div class="upper-div h-[25rem] relative flex  ">
         <img class="absolute h-full bottom-0 object-cover w-full z-[-2]" src="{{asset('images/mobile-footerbg1.png')}}" alt="triangle image">
         <img class="absolute h-[80%] bottom-0 object-cover w-full z-[-1]" src="{{asset('images/mobile-footerbg2.png')}}" alt="second footer image">
-        <div class="flex justify-between p-4">
-            <div class="fur w-[20%]">
+        <div class="flex justify-between items-center p-4 ">
+            <div class="fur w-[20%] mb-[3rem]">
                 <img src="{{asset('images/footerlogo.png')}}" alt="">
             </div>
-            <div class="ful w-[70%] text-white text-sm font-bold">
+            <div class="ful w-[50%] text-white text-sm font-bold">
                 Zain Zwy Information Technology is a leading company specializing in providing integrated and innovative technology solutions. Founded at the beginning of this year.
             </div>
         </div>
@@ -192,7 +192,7 @@
             </div>
         </div>
     </div>
-    <div class="bottom-div relative w-full h-[auto] border-2 border-yellow-600 ">
+    <div class="bottom-div relative w-full h-[auto]">
         <img class="absolute w-full bottom-0 h-full object-cover z-[-2]" src="{{asset('images/footer-mobilebg3.png')}}" alt="third footer image">
         <!-- Main Menu -->
         <div class="main-menu flex flex-col text-white font-bold mt-[10rem] px-4">
