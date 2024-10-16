@@ -1,5 +1,5 @@
 <style>
-    .cardL p {
+    .cardL {
         transform: rotate(-90deg);
     }
 
@@ -54,11 +54,9 @@
             width: 100%;
             margin-bottom: 1rem;
         }
-        .cardL {
-            width: 25%;
-            height: auto;
-            border-width: 2px;
-        }
+     .cardL{
+        width: 30%;
+     }
         .cardL p {
             font-size: 0.8rem;
         }
@@ -69,11 +67,16 @@
             width: 100%;
         }
     }
+    @media (max-width: 500px){
+        .cardL{
+            width: 70%;
+        }
+    }
 
     /* Ensure the background images cover the section properly */
     #aboutUs img.absolute {
         width: 100%;
-        height: auto;
+        height: 100%;
         object-fit: cover;
     }
 </style>
@@ -106,10 +109,10 @@
 
         <!-- Goals Section -->
         <div class="flex flex-col mt-10 gap-10">
-            <div class="flex flex-wrap justify-center gap-10">
+            <div class="flex flex-wrap justify-around gap-10">
                 <!-- Goal Card 1 -->
                 <div class="card shadow-md px-4 py-5 w-full sm:w-[45%] lg:w-[25%] flex items-center">
-                    <div class="cardL w-[15%] h-[80%] border-t-4 border-black border-b-4 border-r-4 flex justify-center items-center font-bold">
+                    <div class="cardL w-[70%] h-[20%] border-l-4 border-black border-b-4 border-r-4 flex justify-center items-center font-bold">
                         <p class="flex justify-between">Goal<span class="ml-1 text-[#26A7C0]">01</span></p>
                     </div>
                     <div class="cardR ml-5">
@@ -121,7 +124,7 @@
 
                 <!-- Goal Card 2 -->
                 <div class="card shadow-md px-4 py-5 w-full sm:w-[45%] lg:w-[25%] flex items-center">
-                    <div class="cardL w-[15%] h-[80%] border-t-4 border-black border-b-4 border-r-4 flex justify-center items-center font-bold">
+                    <div class="cardL w-[70%] h-[20%] border-l-4 border-black border-b-4 border-r-4 flex justify-center items-center font-bold">
                         <p class="flex justify-between">Goal<span class="ml-1 text-[#26A7C0]">03</span></p>
                     </div>
                     <div class="cardR ml-5">
@@ -133,7 +136,7 @@
 
                 <!-- Goal Card 3 -->
                 <div class="card shadow-md px-4 py-5 w-full sm:w-[45%] lg:w-[25%] flex items-center">
-                    <div class="cardL w-[15%] h-[80%] border-t-4 border-black border-b-4 border-r-4 flex justify-center items-center font-bold">
+                    <div class="cardL w-[70%] h-[20%] border-l-4 border-black border-b-4 border-r-4 flex justify-center items-center font-bold">
                         <p class="flex justify-between">Goal<span class="ml-1 text-[#26A7C0]">02</span></p>
                     </div>
                     <div class="cardR ml-5">
@@ -145,10 +148,10 @@
 
                 <!-- Goal Card 4 -->
                 <div class="card shadow-md px-4 py-5 w-full sm:w-[45%] lg:w-[25%] flex items-center">
-                    <div class="cardL w-[15%] h-[80%] border-t-4 border-black border-b-4 border-r-4 flex justify-center items-center font-bold">
+                    <div class="cardL w-[70%] h-[20%] border-l-4 border-black border-b-4 border-r-4 flex justify-center items-center font-bold">
                         <p class="flex justify-between">Goal<span class="ml-1 text-[#26A7C0]">04</span></p>
                     </div>
-                    <div class="cardR ml-5">
+                    <div class="cardR ">
                         <div><img src="{{asset('images/card4.png')}}" alt="Goal 4"></div>
                         <div class="text-[1rem] sm:text-[1.25rem] font-bold text-[#034A58]">Building Strategic Partnerships</div>
                         <div class="text-[#3B636B] text-[0.8rem]">We focus on building strong relationships with our business partners.</div>
