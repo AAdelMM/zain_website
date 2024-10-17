@@ -73,8 +73,8 @@
     <div class="title  text-center text-[#26A7C0] mt-[5rem]">our work</div>
     <div class="mt-5 relative">
         <img class="w-[100%] absolute z-[-2] top-10" src="{{asset('images/ourworkbg.png')}}" alt="">
-        <div class="text-center text-[2.7rem] text-[#034A58] font-extrabold  "><span class="text-[#26A7C0]">Our Work </span>That Exceeded</div>
-        <div class="text-center text-[2.7rem] text-[#034A58] font-extrabold">Expectations And Drove Business Growth</div>
+        <div class="text-center lg:text-[2.7rem] md:text-[1.8rem] text-[1.2rem] text-[#034A58] font-extrabold  "><span class="text-[#26A7C0]">Our Work </span>That Exceeded</div>
+        <div class="text-center lg:text-[2.7rem] md:text-[1.8rem] text-[1.2rem] text-[#034A58] font-extrabold">Expectations And Drove Business Growth</div>
         <div class="carousel-container w-[80%] mx-auto">
         <div class="text-center cards container flex mt-[10rem] mx-auto w-[80%]">
         <div class="card mx-2 border-2 shadow-2xl w-[20%] h-[40rem] relative">
