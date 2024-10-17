@@ -12,7 +12,7 @@
     }
     @media (max-width: 600px) {
         #service{
-            height: 90rem;
+            height: 85rem;
         }
         .bg1{
             display:none;
@@ -29,7 +29,7 @@
     }
     @media (max-width: 400px) {
         #service{
-            height: 100rem;
+            height: 85rem;
         }
     }
 </style>
