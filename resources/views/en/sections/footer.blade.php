@@ -107,7 +107,7 @@
         <div class="container mx-auto flex flex-col lg:flex-row justify-between">
             <!-- Company Info -->
             <div class="w-full lg:w-[20%] mb-[15rem] flex flex-col items-center">
-                <div class="mb-[1rem]"><img src="{{asset('images/footerlogo.png')}}" alt="Logo"></div>
+                <div class="mb-[1rem]"><img src="{{asset('images/footerlogonew.png')}}" alt="Logo"></div>
                 <div class="text-[#3B636B] text-center px-5 text-[0.9rem] font-bold">
                     <p>Zain Zwy Information Technology is a leading company specializing in providing integrated and innovative technology solutions. Founded at the beginning of this year.</p>
                 </div>
@@ -173,7 +173,7 @@
         <img class="absolute h-[80%] bottom-0 object-cover w-full z-[-1]" src="{{asset('images/mobile-footerbg2.png')}}" alt="second footer image">
         <div class="flex justify-between items-center p-4 ">
             <div class="fur w-[20%] mb-[3rem]">
-                <img src="{{asset('images/footerlogo.png')}}" alt="">
+                <img src="{{asset('images/footerlogonew.png')}}" alt="">
             </div>
             <div class="ful w-[50%] text-white text-sm font-bold">
                 Zain Zwy Information Technology is a leading company specializing in providing integrated and innovative technology solutions. Founded at the beginning of this year.
