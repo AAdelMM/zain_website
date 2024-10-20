@@ -91,9 +91,7 @@
             <img class="w-full h-auto" src="{{asset('images/mission.png')}}" alt="">
         </div>
     </div>
-    Route::get('/services', function () {
-    return view('en.pages.services');
-});
+  
     <div class="mission flex flex-col-reverse md:flex-row justify-between mt-20 md:mt-[15rem]">
         <div class="w-full md:w-auto mb-8 md:mb-0">
             <img class="w-full h-auto" src="{{asset('images/target.png')}}" alt="">
