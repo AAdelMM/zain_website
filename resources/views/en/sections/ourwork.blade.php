@@ -56,6 +56,9 @@
         .ourworkframe{
             display:none;
         }
+        .hero{
+            height:20rem;
+        }
     }
 
     @media (max-width: 768px) {
@@ -80,7 +83,7 @@
 <section id="ourwork">
     <div class="title  text-center text-[#26A7C0] mt-[5rem]">our work</div>
     <div class="mt-5 relative">
-        <img class="w-[100%] absolute z-[-2] top-10 ourworkframe" src="{{asset('images/ourworkbg.png')}}" alt="">
+        <img class="w-[100%] absolute z-[-2]  top-10 ourworkframe" src="{{asset('images/ourworkbg.png')}}" alt="">
         <div class="text-center lg:text-[2.7rem] md:text-[1.8rem] text-[1.2rem] text-[#034A58] font-extrabold  "><span class="text-[#26A7C0]">Our Work </span>That Exceeded</div>
         <div class="text-center lg:text-[2.7rem] md:text-[1.8rem] text-[1.2rem] text-[#034A58] font-extrabold">Expectations And Drove Business Growth</div>
         <div class="carousel-container w-[80%] mx-auto">

@@ -55,11 +55,18 @@
     }
 
     /* Mobile styles */
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
         .card {
             width: 100% !important;
         }
-
+        .hero{
+            height:20rem;
+            
+        }
+        .z-image{
+            over-flow:hidden;        
+        }
+        
         .cards-group {
             flex-direction: column;
             align-items: center;
