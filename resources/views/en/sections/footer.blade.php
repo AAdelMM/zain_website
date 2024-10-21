@@ -140,11 +140,11 @@
                     <!-- Main Menu -->
                     <div class="main-menu flex flex-col text-white font-bold">
                         <div class="mb-5 text-[1.5rem] font-extrabold">ZAIN ZWY</div>
-                        <div class="pt-2">Home</div>
-                        <div class="pt-2">About Us</div>
-                        <div class="pt-2">Services</div>
-                        <div class="pt-2">Our Work</div>
-                        <div class="pt-2">Contact Us</div>
+                        <a href="/" class="hover:text-[#26A7C0]"><div class="pt-2">Home</div></a>
+            <div class="pt-2"><a href="/about" class="hover:text-[#26A7C0]">About Us</a></div>
+            <div class="pt-2"><a href="/services" class="hover:text-[#26A7C0]">Services</a></div>
+            <div class="pt-2"><a href="/work" class="hover:text-[#26A7C0]">Our Work</a></div>
+                        
                     </div>
 
                     <!-- Social Links -->
@@ -200,11 +200,11 @@
         <!-- Main Menu -->
         <div class="main-menu flex flex-col text-white font-bold mt-[10rem] px-4">
             <div class="mb-5 text-[1.5rem] font-extrabold">ZAIN ZWY</div>
-            <div class="pt-2">Home</div>
-            <div class="pt-2">About Us</div>
-            <div class="pt-2">Services</div>
-            <div class="pt-2">Our Work</div>
-            <div class="pt-2">Contact Us</div>
+            <a href="/" class="hover:text-[#26A7C0]"><div class="pt-2">Home</div></a>
+            <div class="pt-2"><a href="/about" class="hover:text-[#26A7C0]">About Us</a></div>
+            <div class="pt-2"><a href="/services" class="hover:text-[#26A7C0]">Services</a></div>
+            <div class="pt-2"><a href="/work" class="hover:text-[#26A7C0]">Our Work</a></div>
+            
         </div>
          <!-- Contact Us -->
          <div class="contactus text-white font-bold px-4 mt-8 flex flex-col items-center">

@@ -17,7 +17,7 @@ header {
 
     .header-menu ul {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.8rem;
     }
 
     .header-right {
@@ -50,9 +50,9 @@ header {
             <div class="hidden sm:flex items-center">
                 <img src="{{ asset('images/search.png') }}" alt="search icon">
             </div>
-            <div class="hidden sm:flex bg-[#26A7C0] hover:bg-[#29636e] px-4 py-2 text-white font-bold items-center justify-center">
+           <a href="/contact-us"> <div class="hidden sm:flex bg-[#26A7C0] hover:bg-[#29636e] px-4 py-2 text-white font-bold items-center justify-center">
                 Contact Us
-            </div>
+            </div></a>
         </div>
    </div>
    <!-- Mobile Menu Button -->
@@ -66,7 +66,7 @@ header {
    </div>
 </header>
 <!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden md:hidden bg-[#29636e] text-white w-full absolute top-[5rem] opacity-90 z-[100]">
+<div id="mobile-menu" class="hidden md:hidden bg-[#29636e] h-[15rem] text-white w-full absolute top-[5rem] opacity-90 z-[100]">
    <ul class="flex flex-col items-center py-4">
        <li><a href="/" class="py-2 hover:text-[#26A7C0]">Home</a></li>
        <li><a href="/about" class="py-2 hover:text-[#26A7C0]">About Us</a></li>
@@ -76,6 +76,10 @@ header {
            <img src="{{ asset('images/world.png') }}" alt="" class="mr-2">
            <span>العربية</span>
        </li>
+       <li> <a href="/contact-us"> <div class=" sm:flex bg-[#26A7C0] hover:bg-[#29636e] px-4 py-2 text-white font-bold items-center justify-center">
+                Contact Us
+            </div></a></li>
+      
    </ul>
 </div>
 

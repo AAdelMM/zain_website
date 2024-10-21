@@ -17,3 +17,7 @@ Route::get('/services', function () {
 Route::get('/work', function () {
     return view('en.pages.our-work');
 });
+
+Route::get('/contact-us', function () {
+    return view('en.pages.contact-us');
+});
