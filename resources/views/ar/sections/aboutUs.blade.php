@@ -1,6 +1,12 @@
 <style>
     .cardL {
-        transform: rotate(-90deg);
+        transform: rotate(90deg); /* Changed rotation for RTL */
+    }
+
+    /* RTL specific styles */
+    .rtl {
+        direction: rtl;
+        text-align: right;
     }
 
     /* Responsive Styles */
@@ -54,14 +60,14 @@
             width: 100%;
             margin-bottom: 1rem;
         }
-     .cardL{
-        width: 30%;
-     }
+        .cardL {
+            width: 30%;
+        }
         .cardL p {
             font-size: 0.8rem;
         }
         .cardR {
-            margin-left: 1rem;
+            margin-right: 1rem; /* Changed from margin-left for RTL */
         }
         .w-40 {
             width: 100%;
@@ -73,7 +79,6 @@
         }
     }
 
-    /* Ensure the background images cover the section properly */
     #aboutUs img.absolute {
         width: 100%;
         height: 100%;
@@ -81,29 +86,29 @@
     }
 </style>
 
-<section id="aboutUs" class="relative py-10">
-    <img class="absolute z-[-5] w-full h-auto left-0 opacity-50 object-cover" src="{{asset('images/aboutbg.png')}}" alt="about bg">
-    <img class="absolute left-0 z-[-3] w-full h-full opacity-98 object-cover" src="{{asset('images/aboutcover.png')}}" alt="cover">
+<section id="aboutUs" class="relative py-10 rtl">
+    <img class="absolute z-[-5] w-full h-auto right-0 opacity-50 object-cover" src="{{asset('images/aboutbg.png')}}" alt="خلفية من نحن">
+    <img class="absolute right-0 z-[-3] w-full h-full opacity-98 object-cover" src="{{asset('images/aboutcover.png')}}" alt="غطاء">
 
     <div class="container mx-auto mt-20 px-4">
         <div class="text-[#26A7C0] flex items-center gap-2 text-[0.9rem]">
-            About Us <img class="w-6 h-2" src="{{asset('images/arrowL.png')}}" alt="">
+            <img class="w-6 h-2 transform rotate-180" src="{{asset('images/arrowL.png')}}" alt=""> من نحن
         </div>
 
         <div class="flex flex-col lg:flex-row justify-between gap-10 mt-5">
             <!-- Text Content -->
             <div class="flex flex-col font-extrabold w-full lg:w-[50%] my-5">
-                <div class="text-[1.8rem] sm:text-[2.6rem] text-[#034A58]">Where Technology</div>
-                <div class="text-[1.7rem] sm:text-[2.6rem] text-[#034A58]">Meets <span class="text-[#26A7C0]">Creativity</span> to Build</div>
-                <div class="text-[1.8rem] sm:text-[2.6rem] text-[#034A58]">Innovative Digital Solutions</div>
+                <div class="text-[1.8rem] sm:text-[2.6rem] text-[#034A58]">حيث تلتقي التكنولوجيا</div>
+                <div class="text-[1.7rem] sm:text-[2.6rem] text-[#034A58]">مع <span class="text-[#26A7C0]">الإبداع</span> لبناء</div>
+                <div class="text-[1.8rem] sm:text-[2.6rem] text-[#034A58]">حلول رقمية مبتكرة</div>
                 <div class="text-[#3B636B] font-normal my-7 text-[0.9rem] leading-relaxed">
-                    Zain Zwy Information Technology is a leading company specializing in providing integrated and innovative technology solutions. Founded at the beginning of this year, we aim to make our mark in the fast-paced world of technology. We offer a diverse range of tech services that meet our clients' needs and help them achieve their goals through modern technology.
+                    زين زوي لتقنية المعلومات هي شركة رائدة متخصصة في تقديم حلول تكنولوجية متكاملة ومبتكرة. تأسست في بداية هذا العام، ونهدف إلى ترك بصمتنا في عالم التكنولوجيا سريع التطور. نقدم مجموعة متنوعة من الخدمات التقنية التي تلبي احتياجات عملائنا وتساعدهم في تحقيق أهدافهم من خلال التكنولوجيا الحديثة.
                 </div>
-                <div class="w-40 bg-[#26A7C0] text-white text-center py-3 cursor-pointer">READ MORE</div>
+                <div class="w-40 bg-[#26A7C0] text-white text-center py-3 cursor-pointer">اقرأ المزيد</div>
             </div>
             <!-- Image -->
             <div class="w-full lg:w-[45%]">
-                <img class="w-full h-auto" src="{{asset('images/aboutImg.png')}}" alt="About Image">
+                <img class="w-full h-auto" src="{{asset('images/aboutImg.png')}}" alt="صورة من نحن">
             </div>
         </div>
 
@@ -113,54 +118,54 @@
                 <!-- Goal Card 1 -->
                 <div class="card shadow-md px-4 py-5 w-full sm:w-[45%] lg:w-[25%] flex items-center">
                     <div class="cardL w-[70%] h-[20%] border-l-4 border-black border-b-4 border-r-4 flex justify-center items-center font-bold">
-                        <p class="flex justify-between">Goal<span class="ml-1 text-[#26A7C0]">01</span></p>
+                        <p class="flex justify-between">الهدف<span class="mr-1 text-[#26A7C0]">١</span></p>
                     </div>
-                    <div class="cardR ml-5">
-                        <div><img src="{{asset('images/card1.png')}}" alt="Goal 1"></div>
-                        <div class="text-[1rem] sm:text-[1.25rem] font-bold text-[#034A58]">Achieving Customer Satisfaction</div>
-                        <div class="text-[#3B636B] text-[0.8rem]">We strive to meet and exceed our customers’ expectations by providing customized services.</div>
+                    <div class="cardR mr-5">
+                        <div><img src="{{asset('images/card1.png')}}" alt="الهدف ١"></div>
+                        <div class="text-[1rem] sm:text-[1.25rem] font-bold text-[#034A58]">تحقيق رضا العملاء</div>
+                        <div class="text-[#3B636B] text-[0.8rem]">نسعى لتلبية وتجاوز توقعات عملائنا من خلال تقديم خدمات مخصصة.</div>
                     </div>
                 </div>
 
                 <!-- Goal Card 2 -->
                 <div class="card shadow-md px-4 py-5 w-full sm:w-[45%] lg:w-[25%] flex items-center">
                     <div class="cardL w-[70%] h-[20%] border-l-4 border-black border-b-4 border-r-4 flex justify-center items-center font-bold">
-                        <p class="flex justify-between">Goal<span class="ml-1 text-[#26A7C0]">03</span></p>
+                        <p class="flex justify-between">الهدف<span class="mr-1 text-[#26A7C0]">٣</span></p>
                     </div>
-                    <div class="cardR ml-5">
-                        <div><img src="{{asset('images/card2.png')}}" alt="Goal 2"></div>
-                        <div class="text-[1rem] sm:text-[1.25rem] font-bold text-[#034A58]">Expansion and Growth</div>
-                        <div class="text-[#3B636B] text-[0.8rem]">We aim to expand our services and increase our market share in the field of IT.</div>
+                    <div class="cardR mr-5">
+                        <div><img src="{{asset('images/card2.png')}}" alt="الهدف ٢"></div>
+                        <div class="text-[1rem] sm:text-[1.25rem] font-bold text-[#034A58]">التوسع والنمو</div>
+                        <div class="text-[#3B636B] text-[0.8rem]">نهدف إلى توسيع خدماتنا وزيادة حصتنا السوقية في مجال تقنية المعلومات.</div>
                     </div>
                 </div>
 
                 <!-- Goal Card 3 -->
                 <div class="card shadow-md px-4 py-5 w-full sm:w-[45%] lg:w-[25%] flex items-center">
                     <div class="cardL w-[70%] h-[20%] border-l-4 border-black border-b-4 border-r-4 flex justify-center items-center font-bold">
-                        <p class="flex justify-between">Goal<span class="ml-1 text-[#26A7C0]">02</span></p>
+                        <p class="flex justify-between">الهدف<span class="mr-1 text-[#26A7C0]">٢</span></p>
                     </div>
-                    <div class="cardR ml-5">
-                        <div><img src="{{asset('images/card3.png')}}" alt="Goal 3"></div>
-                        <div class="text-[1rem] sm:text-[1.25rem] font-bold text-[#034A58]">Innovation and Quality</div>
-                        <div class="text-[#3B636B] text-[0.8rem]">We are committed to providing the highest levels of quality in everything we do.</div>
+                    <div class="cardR mr-5">
+                        <div><img src="{{asset('images/card3.png')}}" alt="الهدف ٣"></div>
+                        <div class="text-[1rem] sm:text-[1.25rem] font-bold text-[#034A58]">الابتكار والجودة</div>
+                        <div class="text-[#3B636B] text-[0.8rem]">نلتزم بتقديم أعلى مستويات الجودة في كل ما نقوم به.</div>
                     </div>
                 </div>
 
                 <!-- Goal Card 4 -->
                 <div class="card shadow-md px-4 py-5 w-full sm:w-[45%] lg:w-[25%] flex items-center">
                     <div class="cardL w-[70%] h-[20%] border-l-4 border-black border-b-4 border-r-4 flex justify-center items-center font-bold">
-                        <p class="flex justify-between">Goal<span class="ml-1 text-[#26A7C0]">04</span></p>
+                        <p class="flex justify-between">الهدف<span class="mr-1 text-[#26A7C0]">٤</span></p>
                     </div>
-                    <div class="cardR ">
-                        <div><img src="{{asset('images/card4.png')}}" alt="Goal 4"></div>
-                        <div class="text-[1rem] sm:text-[1.25rem] font-bold text-[#034A58]">Building Strategic Partnerships</div>
-                        <div class="text-[#3B636B] text-[0.8rem]">We focus on building strong relationships with our business partners.</div>
+                    <div class="cardR mr-5">
+                        <div><img src="{{asset('images/card4.png')}}" alt="الهدف ٤"></div>
+                        <div class="text-[1rem] sm:text-[1.25rem] font-bold text-[#034A58]">بناء شراكات استراتيجية</div>
+                        <div class="text-[#3B636B] text-[0.8rem]">نركز على بناء علاقات قوية مع شركائنا في العمل.</div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Decorative Image -->
-        <img class="absolute right-0 top-1/2 transform -translate-y-1/2 w-20 opacity-75" src="{{asset('images/aboutz.png')}}" alt="Decorative Image">
+        <img class="absolute left-0 top-1/2 transform -translate-y-1/2 w-20 opacity-75" src="{{asset('images/aboutz.png')}}" alt="صورة تزيينية">
     </div>
 </section>
