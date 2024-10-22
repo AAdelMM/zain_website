@@ -116,9 +116,7 @@
     }
 
     /* RTL Support */
-    body {
-        direction: rtl;
-    }
+   
 
     .swiper-button-next {
         right: auto;
