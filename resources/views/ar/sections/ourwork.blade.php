@@ -116,7 +116,6 @@
     }
 
     /* RTL Support */
-   
 
     .swiper-button-next {
         right: auto;
