@@ -14,8 +14,8 @@
         #aboutUs .flex-col {
             flex-direction: column;
         }
-        #aboutUs .w-full {
-            width: 100%;
+        #aboutUs .goalcard {
+            width: 40%;
         }
         #aboutUs .lg\\:w-\\[50%\\] {
             width: 100%;
@@ -26,9 +26,12 @@
         #aboutUs .lg\\:flex-row {
             flex-direction: column;
         }
+        #aboutUs .aboutimg{
+            width: 100%;
+        }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
         .text-[1.8rem], .text-[1.7rem], .text-[2.6rem] {
             font-size: 1.5rem;
         }
@@ -43,6 +46,9 @@
         }
         .mt-10 {
             margin-top: 2rem;
+        }
+        #aboutUs .goalcard {
+            width: 50%;
         }
     }
 
@@ -69,8 +75,11 @@
         .cardR {
             margin-right: 1rem; /* Changed from margin-left for RTL */
         }
-        .w-40 {
+        /* .w-40 {
             width: 100%;
+        } */
+        #aboutUs .goalcard {
+            width: 70%;
         }
     }
     @media (max-width: 500px){
@@ -107,8 +116,8 @@
                 <div class="w-40 bg-[#26A7C0] text-white text-center py-3 cursor-pointer">اقرأ المزيد</div>
             </div>
             <!-- Image -->
-            <div class="w-full lg:w-[45%]">
-                <img class="w-full h-auto" src="{{asset('images/aboutImg.png')}}" alt="صورة من نحن">
+            <div class="w-full lg:w-[45%] abouimg">
+                <img class="w-full h-auto " src="{{asset('images/aboutImg.png')}}" alt="صورة من نحن">
             </div>
         </div>
 
@@ -116,7 +125,7 @@
         <div class="flex flex-col mt-10 gap-10">
             <div class="flex flex-wrap justify-around gap-10">
                 <!-- Goal Card 1 -->
-                <div class="card shadow-md px-4 py-5 w-full sm:w-[45%] lg:w-[25%] flex items-center">
+                <div class="card shadow-md px-4 py-5 w-full sm:w-[45%] lg:w-[25%] flex items-center goalcard">
                     <div class="cardL w-[70%] h-[20%] border-l-4 border-black border-b-4 border-r-4 flex justify-center items-center font-bold">
                         <p class="flex justify-between">الهدف<span class="mr-1 text-[#26A7C0]">١</span></p>
                     </div>
@@ -128,7 +137,7 @@
                 </div>
 
                 <!-- Goal Card 2 -->
-                <div class="card shadow-md px-4 py-5 w-full sm:w-[45%] lg:w-[25%] flex items-center">
+                <div class="card shadow-md px-4 py-5 w-full sm:w-[45%] lg:w-[25%] flex items-center goalcard">
                     <div class="cardL w-[70%] h-[20%] border-l-4 border-black border-b-4 border-r-4 flex justify-center items-center font-bold">
                         <p class="flex justify-between">الهدف<span class="mr-1 text-[#26A7C0]">٣</span></p>
                     </div>
@@ -140,7 +149,7 @@
                 </div>
 
                 <!-- Goal Card 3 -->
-                <div class="card shadow-md px-4 py-5 w-full sm:w-[45%] lg:w-[25%] flex items-center">
+                <div class="card shadow-md px-4 py-5 w-full sm:w-[45%] lg:w-[25%] flex items-center goalcard">
                     <div class="cardL w-[70%] h-[20%] border-l-4 border-black border-b-4 border-r-4 flex justify-center items-center font-bold">
                         <p class="flex justify-between">الهدف<span class="mr-1 text-[#26A7C0]">٢</span></p>
                     </div>
@@ -152,7 +161,7 @@
                 </div>
 
                 <!-- Goal Card 4 -->
-                <div class="card shadow-md px-4 py-5 w-full sm:w-[45%] lg:w-[25%] flex items-center">
+                <div class="card shadow-md px-4 py-5 w-full sm:w-[45%] lg:w-[25%] flex items-center goalcard">
                     <div class="cardL w-[70%] h-[20%] border-l-4 border-black border-b-4 border-r-4 flex justify-center items-center font-bold">
                         <p class="flex justify-between">الهدف<span class="mr-1 text-[#26A7C0]">٤</span></p>
                     </div>
