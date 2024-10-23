@@ -15,7 +15,15 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
-
+<style type="text/css">
+    @font-face {
+        font-family: hacen;
+        src: url('{{ asset('fonts/alfont_com_Hacen-Tunisia.tff') }}');
+    }
+    body{
+        font-family:hacen;
+    }
+</style>
 
 
     @livewireStyles

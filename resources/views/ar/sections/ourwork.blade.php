@@ -117,12 +117,12 @@
 
     /* RTL Support */
 
-    .swiper-button-next {
+    .swiper-button-prev {
         right: auto;
         left: 10px;
     }
 
-    .swiper-button-prev {
+    .swiper-button-next {
         left: auto;
         right: 10px;
     }

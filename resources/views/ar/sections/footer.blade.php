@@ -153,10 +153,10 @@
                     <!-- Main Menu -->
                     <div class="main-menu flex flex-col text-white font-bold" style="direction:rtl;">
                         <div class="mb-5 text-[1.5rem] font-extrabold">زين زوي</div>
-                        <a href="/" class="hover:text-[#26A7C0]"><div class="pt-2">الرئيسية</div></a>
-            <div class="pt-2"><a href="/about" class="hover:text-[#26A7C0]">من نحن</a></div>
-            <div class="pt-2"><a href="/services" class="hover:text-[#26A7C0]">خدماتنا</a></div>
-            <div class="pt-2"><a href="/work" class="hover:text-[#26A7C0]">اعمالنا</a></div>
+                        <a href="/ar" class="hover:text-[#26A7C0]"><div class="pt-2">الرئيسية</div></a>
+            <div class="pt-2"><a href="/ar.about" class="hover:text-[#26A7C0]">من نحن</a></div>
+            <div class="pt-2"><a href="/ar.services" class="hover:text-[#26A7C0]">خدماتنا</a></div>
+            <div class="pt-2"><a href="/ar.work" class="hover:text-[#26A7C0]">اعمالنا</a></div>
                         
                     </div>
 
@@ -212,10 +212,10 @@
         <!-- Main Menu -->
         <div class="main-menu flex flex-col text-white font-bold mt-[10rem] px-4" style="direction:rtl;">
             <div class="mb-5 text-[1.5rem] font-extrabold">زين زوي</div>
-            <a href="/" class="hover:text-[#26A7C0]"><div class="pt-2">الرئيسية</div></a>
-            <div class="pt-2"><a href="/about" class="hover:text-[#26A7C0]">من نحن</a></div>
-            <div class="pt-2"><a href="/services" class="hover:text-[#26A7C0]">خدماتنا</a></div>
-            <div class="pt-2"><a href="/work" class="hover:text-[#26A7C0]">اعمالنا</a></div>
+            <a href="/ar" class="hover:text-[#26A7C0]"><div class="pt-2">الرئيسية</div></a>
+            <div class="pt-2"><a href="/ar.about" class="hover:text-[#26A7C0]">من نحن</a></div>
+            <div class="pt-2"><a href="/ar.services" class="hover:text-[#26A7C0]">خدماتنا</a></div>
+            <div class="pt-2"><a href="/ar.work" class="hover:text-[#26A7C0]">اعمالنا</a></div>
             
         </div>
          <!-- Contact Us -->

@@ -35,10 +35,10 @@ header {
         <!-- Navigation Menu -->
         <div class="text-white w-auto header-menu hidden md:flex items-center">
             <ul class="flex flex-row gap-6">
-            <li><a href="/work" class="hover:text-[#26A7C0]">اعمالنا</a></li>
-            <li><a href="/services" class="hover:text-[#26A7C0]">خدماتنا</a></li>
-            <li><a href="/about" class="hover:text-[#26A7C0]">من نحن</a></li>
-            <li><a href="/" class="hover:text-[#26A7C0]">الرئيسية</a></li>
+            <li><a href="/ar.work" class="hover:text-[#26A7C0]">اعمالنا</a></li>
+            <li><a href="/ar.services" class="hover:text-[#26A7C0]">خدماتنا</a></li>
+            <li><a href="/ar.about" class="hover:text-[#26A7C0]">من نحن</a></li>
+            <li><a href="/ar" class="hover:text-[#26A7C0]">الرئيسية</a></li>
            
             </ul>
         </div>
@@ -69,10 +69,10 @@ header {
 <!-- Mobile Menu -->
 <div id="mobile-menu" class="hidden md:hidden bg-[#29636e] h-[15rem] text-white w-full absolute top-[5rem] opacity-90 z-[100]">
    <ul class="flex flex-col items-center py-4">
-       <li><a href="/" class="py-2 hover:text-[#26A7C0]">الرئيسية</a></li>
-       <li><a href="/about" class="py-2 hover:text-[#26A7C0]">من نحن</a></li>
-       <li><a href="/services" class="py-2 hover:text-[#26A7C0]">خدماتنا</a></li>
-       <li><a href="/work" class="py-2 hover:text-[#26A7C0]">اعمالنا</a></li>
+       <li><a href="/ar" class="py-2 hover:text-[#26A7C0]">الرئيسية</a></li>
+       <li><a href="/ar.about" class="py-2 hover:text-[#26A7C0]">من نحن</a></li>
+       <li><a href="/ar.services" class="py-2 hover:text-[#26A7C0]">خدماتنا</a></li>
+       <li><a href="/ar.work" class="py-2 hover:text-[#26A7C0]">اعمالنا</a></li>
        <a href="/">  <li class="flex items-center py-2 hover:text-[#26A7C0]">
           <img src="{{ asset('images/world.png') }}" alt="" class="mr-2">
            <span>English</span>

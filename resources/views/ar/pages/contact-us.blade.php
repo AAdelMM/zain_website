@@ -1,6 +1,6 @@
-@extends('en.layout')
+@extends('ar.layout')
 
-@section('title', 'Contact Us')
+@section('title', 'Contact Us_ar')
 
 @section('content')
 
