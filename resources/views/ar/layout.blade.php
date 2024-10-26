@@ -17,11 +17,11 @@
 />
 <style type="text/css">
     @font-face {
-        font-family: hacen;
-        src: url('{{ asset('fonts/alfont_com_Hacen-Tunisia.tff') }}');
+        font-family: 'HacenTunisia';
+        src: url('{{ asset('fonts/HacenTunisia.ttf') }}') format('truetype');
     }
     body{
-        font-family:hacen;
+        font-family:'HacenTunisia', sans-serif;
     }
 </style>
 
