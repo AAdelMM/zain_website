@@ -99,7 +99,7 @@
                 <div class="text-[#3B636B] font-normal my-7 text-[0.9rem] leading-relaxed">
                     Zain Zwy Information Technology is a leading company specializing in providing integrated and innovative technology solutions. Founded at the beginning of this year, we aim to make our mark in the fast-paced world of technology. We offer a diverse range of tech services that meet our clients' needs and help them achieve their goals through modern technology.
                 </div>
-                <div class="w-40 bg-[#26A7C0] text-white text-center py-3 cursor-pointer">READ MORE</div>
+                <div class="w-40 bg-[#26A7C0] text-white text-center py-3 cursor-pointer z-50"><a href="/about">READ MORE</a></div>
             </div>
             <!-- Image -->
             <div class="w-full lg:w-[45%]">

@@ -60,9 +60,9 @@
                             from designing and developing websites and applications to digital transformation and e-marketing strategies.</p>
                     </div>
                 </div>
-                <div class="button w-[50%] md:w-[10%] py-2 bg-[#26A7C0] text-center text-white font-bold mt-5 md:mt-0">
-                    Explore All
-                </div>
+               <div class="button w-[50%] md:w-[10%] py-2 bg-[#26A7C0] text-center text-white font-bold mt-5 md:mt-0">
+               <a href="/services"> Explore All</a>
+                </div> 
             </div>
             
             <!-- Card layout for mobile -->

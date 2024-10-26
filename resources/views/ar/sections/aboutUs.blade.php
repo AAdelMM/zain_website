@@ -113,7 +113,7 @@
                 <div class="text-[#3B636B] font-normal my-7 text-[0.9rem] leading-relaxed">
                     زين زوي لتقنية المعلومات هي شركة رائدة متخصصة في تقديم حلول تكنولوجية متكاملة ومبتكرة. تأسست في بداية هذا العام، ونهدف إلى ترك بصمتنا في عالم التكنولوجيا سريع التطور. نقدم مجموعة متنوعة من الخدمات التقنية التي تلبي احتياجات عملائنا وتساعدهم في تحقيق أهدافهم من خلال التكنولوجيا الحديثة.
                 </div>
-                <div class="w-40 bg-[#26A7C0] text-white text-center py-3 cursor-pointer">اقرأ المزيد</div>
+                <div class="w-40 bg-[#26A7C0] text-white text-center py-3 cursor-pointer z-50"><a href="/ar.about">اقرأ المزيد</a></div>
             </div>
             <!-- Image -->
             <div class="w-full lg:w-[45%] abouimg">

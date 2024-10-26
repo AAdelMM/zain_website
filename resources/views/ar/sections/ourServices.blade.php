@@ -60,8 +60,8 @@
                     </div>
                 </div>
                 <div class="button w-[50%] md:w-[10%] py-2 bg-[#26A7C0] text-center text-white font-bold mt-5 md:mt-0">
-                    اكتشف المزيد
-                </div>
+                  <a href="/ar.services"> اكتشف المزيد
+                  </a> </div>
             </div>
             
             <!-- Card layout for mobile -->
